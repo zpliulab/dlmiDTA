@@ -1,0 +1,11 @@
+This code is inspired by GraphDTA-master, and develope basing it, thanks for their contribution.
+Firstly, The drug is expressed as molecular graph and ECFP, GCN module and fully connected(FC) layer are used for learning respectively.
+Secondly, protein sequence and k-mer feature of protein are input into CNN module and FC layer respectively to learn potential protein features.
+Finally, the features learned from the four channels are concatenated and the FC layer is used for prediction.
+
+
+1. data_process.py: this file is to preprocess the dataset , preparing for training the model
+2. training.py : training the 9 models using kiba and davis datasets
+3. prediction.py: predicting the test data using pretrained model
+4. utils.py: store some needed classes and functions.
+5. configuration environment: configurating the environment is a bit complicated, refer to the attached document for details
